@@ -1,0 +1,72 @@
+import { Dimensions, Image, StyleSheet } from 'react-native';
+
+import EditScreenInfo from '../components/EditScreenInfo';
+import { Text, View } from '../components/Themed';
+import { RootTabScreenProps } from '../types';
+import { useAssets } from 'expo-asset';
+import * as React from "react";
+import { Button } from "react-native-elements";
+import LinearGradient from "react-native-linear-gradient";
+
+export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+  return (
+    <View style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      <View style={{
+        height: '50%',
+        width: '90%',
+        backgroundColor: '#87CEEB',
+        borderRadius: 10,
+        overflow: 'hidden',
+        padding: 10,
+        shadowColor: '#000',
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+        flexDirection: 'column'
+      }}>
+
+        <View style={{ flex: 2, borderRadius: 0, overflow: 'hidden' }}>
+          <Image
+            source={{ uri: 'https://images.unsplash.com/photo-1533745848184-3db07256e163?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80' }}
+            style={{
+              height: '100%',
+              width: '100%',
+              resizeMode: 'cover',
+            }}
+          />
+        </View>
+
+        <View style={{ flex: 0, borderRadius: 10, marginVertical: 10, padding: 10 }}>
+          <Text style={{
+            fontSize: 25,
+            color: '#525454',
+            fontFamily: 'poppins-semi-bold'
+          }}>Type your Password</Text>
+        </View>
+        <View style={{ flex: 0, borderRadius: 10, marginVertical: 10, padding: 10 }}>
+          <Text style={{
+            fontSize: 25,
+            color: '#525454',
+            fontFamily: 'poppins-semi-bold'
+          }}>Type your Username</Text>
+        </View>
+
+        
+
+      </View>
+    </View>
+  );
+  
+
+}
+
+
+
