@@ -1,4 +1,5 @@
-import { Dimensions, Image, StyleSheet, View, Text, TextInput, TouchableOpacity,  } from 'react-native';
+import { Dimensions, Image, StyleSheet, View, Text, TextInput, TouchableOpacity,  
+} from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import{} from'./../components/StyledText';
